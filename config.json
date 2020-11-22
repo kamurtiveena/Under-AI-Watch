@@ -19,7 +19,9 @@
        "facenet_weights":"Resources//face_detector//res10_300x300_ssd_iter_140000.caffemodel",
        "studentImages" : "static//studentImages",
        "zip_upload" : "static//zipUpload",
-       "attendanceSheet" : "static//attendanceSheet"
+       "attendanceSheet" : "static//attendanceSheet",
+       "talkingonphone_json" : "Resources//TalkingOnPhone//Talking_vs_normal_neural_net.json",
+       "talkingonphone_weights" : "Resources//TalkingOnPhone//Talking_vs_normal_neural_net.h5"
 
 
        

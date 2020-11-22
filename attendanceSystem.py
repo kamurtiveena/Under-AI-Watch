@@ -5,6 +5,7 @@ import json
 import os
 import time
 import pandas as pd
+from collections import Counter
 
 with open("config.json", "r") as file:
     params = json.load(file)["Params"]
@@ -89,13 +90,17 @@ class ClassRoomAttendance:
 
                     cv2.putText(img, name, (x1+6, y2-6), self.font, 1, (255, 255, 255), 2)
                     self.count += 1
-                    students.append(name)
+                    if len(name)>0:                       
+                        students.append(name)
+                    print(f"Students : {students}")
                     cv2.imwrite(params["images_folder"]+"/" +
                             f"{self.count}.jpg", img)
                             
 
             else:
-                students = list(set(students))
+                print(f"students in else : {students}")
+                count_freq = Counter(students)
+                students = list(count_freq.keys())
                 print(f"Students list = {students}")
                 create_attendance_sheet(students)
                 break

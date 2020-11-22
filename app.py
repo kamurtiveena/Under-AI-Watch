@@ -52,7 +52,23 @@ def getStarted():
             if len(last_video)>0:
                 for file in last_video:      
                     os.remove(os.path.join(params["video_folder"], file))
-                
+
+            last_zipuploads = os.listdir(params["zip_upload"])
+            if len(last_zipuploads)>0:
+                for file in last_zipuploads:      
+                    os.remove(os.path.join(params["zip_upload"], file))
+            
+            last_studentimages = os.listdir(params["studentImages"])
+            if len(last_studentimages)>0:
+                for file in last_studentimages:      
+                    os.remove(os.path.join(params["studentImages"], file))
+
+            last_attendanceSheet = os.listdir(params["attendanceSheet"])
+            if len(last_attendanceSheet)>0:
+                for file in last_attendanceSheet:      
+                    os.remove(os.path.join(params["attendanceSheet"], file))
+
+
             return render_template("getStarted.html", home="", steps="", about="", getStarted="active")
         except TypeError:
             return render_template("getStarted.html", home="", steps="", about="", getStarted="active")
@@ -136,21 +152,6 @@ def uploader():
 
 @app.route("/classroomattendance")
 def classroomattendanceSystem():
-    last_zipuploads = os.listdir(params["zip_upload"])
-    if len(last_zipuploads)>0:
-        for file in last_zipuploads:      
-            os.remove(os.path.join(params["zip_upload"], file))
-    
-    last_studentimages = os.listdir(params["studentImages"])
-    if len(last_studentimages)>0:
-        for file in last_studentimages:      
-            os.remove(os.path.join(params["studentImages"], file))
-
-    last_attendanceSheet = os.listdir(params["attendanceSheet"])
-    if len(last_attendanceSheet)>0:
-        for file in last_attendanceSheet:      
-            os.remove(os.path.join(params["attendanceSheet"], file))
-
     return render_template("classroomattendance.html")
 
 @app.route("/attendanceImages", methods=["GET", "POST"])
