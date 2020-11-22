@@ -146,6 +146,11 @@ def classroomattendanceSystem():
         for file in last_studentimages:      
             os.remove(os.path.join(params["studentImages"], file))
 
+    last_attendanceSheet = os.listdir(params["attendanceSheet"])
+    if len(last_attendanceSheet)>0:
+        for file in last_attendanceSheet:      
+            os.remove(os.path.join(params["attendanceSheet"], file))
+
     return render_template("classroomattendance.html")
 
 @app.route("/attendanceImages", methods=["GET", "POST"])
@@ -186,7 +191,7 @@ def studentAttendance():
     attendancesystem.images()
     attendancesystem.generate_video()
     print("VideoComplete")   
-    return render_template("analysisComplete.html")
+    return render_template("attendanceAnalyzer.html")
     
 
 
@@ -250,13 +255,18 @@ def maskedVsUnMaskedClassification():
 
 
 @app.route("/download_video/<filename>")
-def download_file(filename):
+def download_videofile(filename):
     try:
         return send_from_directory(params["video_folder"], filename = filename, as_attachment=True, cache_timeout = 0)
     except FileNotFoundError:
         abort(404)
 
-
+@app.route("/download_csv/<filename>")
+def download_csvfile(filename):
+    try:
+        return send_from_directory(params["attendanceSheet"], filename = filename, as_attachment=True, cache_timeout = 0)
+    except FileNotFoundError:
+        abort(404)
 
 
 

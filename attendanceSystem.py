@@ -4,7 +4,7 @@ import face_recognition
 import json
 import os
 import time
-
+import pandas as pd
 
 with open("config.json", "r") as file:
     params = json.load(file)["Params"]
@@ -30,6 +30,10 @@ def findEncodings(images):
 
     return encodelist
 
+def create_attendance_sheet(students):
+    df = {"Names": [students]}
+    df = pd.DataFrame(df)
+    df.to_csv(params["attendanceSheet"] + "/" + "attendanceSheet.csv", index = False)
 
 class ClassRoomAttendance:
 
@@ -52,7 +56,7 @@ class ClassRoomAttendance:
     def images(self):
         while True:
             ret, img = self.video.read()
-
+            students = []
             if ret:
                 # print(ret)
                 # print("Analyzing Video and collecting frames")
@@ -85,12 +89,19 @@ class ClassRoomAttendance:
 
                     cv2.putText(img, name, (x1+6, y2-6), self.font, 1, (255, 255, 255), 2)
                     self.count += 1
+                    students.append(name)
                     cv2.imwrite(params["images_folder"]+"/" +
                             f"{self.count}.jpg", img)
                             
 
             else:
+                students = list(set(students))
+                print(f"Students list = {students}")
+                create_attendance_sheet(students)
                 break
+    
+    
+
 
     def generate_video(self):
         print("Generating Video")

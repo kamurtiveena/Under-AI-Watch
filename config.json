@@ -18,7 +18,8 @@
        "facenet_prototxt":"Resources//face_detector//deploy.prototxt",
        "facenet_weights":"Resources//face_detector//res10_300x300_ssd_iter_140000.caffemodel",
        "studentImages" : "static//studentImages",
-       "zip_upload" : "static//zipUpload"
+       "zip_upload" : "static//zipUpload",
+       "attendanceSheet" : "static//attendanceSheet"
 
 
        
