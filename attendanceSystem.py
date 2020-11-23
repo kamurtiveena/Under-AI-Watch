@@ -32,7 +32,7 @@ def findEncodings(images):
     return encodelist
 
 def create_attendance_sheet(students):
-    df = {"Names": [students]}
+    df = {"Names": students}
     df = pd.DataFrame(df)
     df.to_csv(params["attendanceSheet"] + "/" + "attendanceSheet.csv", index = False)
 
@@ -50,6 +50,7 @@ class ClassRoomAttendance:
         self.count = 0
         self.list_images, self.StudentNames = collect_names_and_images(params["studentImages"])
         self.listofknownEncodes = findEncodings(self.list_images)
+        self.students = []
 
     def __del__(self):
         self.video.release()
@@ -57,7 +58,7 @@ class ClassRoomAttendance:
     def images(self):
         while True:
             ret, img = self.video.read()
-            students = []
+            
             if ret:
                 # print(ret)
                 # print("Analyzing Video and collecting frames")
@@ -91,18 +92,17 @@ class ClassRoomAttendance:
                     cv2.putText(img, name, (x1+6, y2-6), self.font, 1, (255, 255, 255), 2)
                     self.count += 1
                     if len(name)>0:                       
-                        students.append(name)
-                    print(f"Students : {students}")
+                        self.students.append(name)
+                    print(f"Students : {self.students}")
                     cv2.imwrite(params["images_folder"]+"/" +
                             f"{self.count}.jpg", img)
                             
 
             else:
-                print(f"students in else : {students}")
-                count_freq = Counter(students)
-                students = list(count_freq.keys())
-                print(f"Students list = {students}")
-                create_attendance_sheet(students)
+                print(f"students in else : {self.students}")
+                self.students = list(set(self.students))
+                print(f"Students list = {self.students}")
+                create_attendance_sheet(self.students)
                 break
     
     
