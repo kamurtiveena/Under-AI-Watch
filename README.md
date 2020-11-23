@@ -36,10 +36,10 @@
   </tr>
  </table>
 
-
+### Resources
+Link for resources : https://drive.google.com/file/d/1UvMmEMvJBkdMExU416_9MRsLphdE52vx/view
 ### Instructions :
 *    Visit the GitHub repository and download the resources folder which is given as a link in the “README.md file. Clone the repository and copy the “Resources” folder inside the cloned folder.
-     <b><i>Link for resources : https://drive.google.com/file/d/1UvMmEMvJBkdMExU416_9MRsLphdE52vx/view</i></b>
 * 	Create a virtual environment and then install the required packages via the ‘’requirements.txt” file (Recommended). We can also opt for route installation.
 * 	Open the command prompt inside the clone directory and type in this command “py app.py”. Make sure your python version is above 3.6. The command will run the flask app in the localhost and you will see a link “ http://127.0.0.1:5000/ ” in the terminal, open the link in a browser.
 * 	You will be directed to the homepage. You will see a navigation bar containing  “Home”, “About”,  “Get Started”,  “Help”. If you have any queries, click on the “Help” button.
