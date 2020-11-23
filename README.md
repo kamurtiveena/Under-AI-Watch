@@ -37,7 +37,7 @@
  </table>
 
 ### Resources
-Link for resources : https://drive.google.com/file/d/1UvMmEMvJBkdMExU416_9MRsLphdE52vx/view
+* <b><i>Link for resources : https://drive.google.com/file/d/1UvMmEMvJBkdMExU416_9MRsLphdE52vx/view</i></b>
 ### Instructions :
 *    Visit the GitHub repository and download the resources folder which is given as a link in the “README.md file. Clone the repository and copy the “Resources” folder inside the cloned folder.
 * 	Create a virtual environment and then install the required packages via the ‘’requirements.txt” file (Recommended). We can also opt for route installation.
