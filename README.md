@@ -49,5 +49,5 @@
  *    For ‘attendance monitoring’ one has to upload a video file along with images of students. Select “ClassRoom Attendance” in the dropdown menu. After clicking on the ‘’Upload’’ button, you will be redirected to a new page where you have to upload a zip file. The zip file must contain distinct images of each student in a classroom with labels as their respective names. After clicking on the ‘submit’ button, you will be redirected to the download page where you can download the analyzed video along with the attendance sheet.
 
 ### Created by :
-* Rudra Prasad Dash (https://www.linkedin.com/in/rudra-prasad-dash-85491910b/)
-* Kumar Abhishek (https://www.linkedin.com/in/ted-kord/)
+* Rudra Prasad Dash (https://github.com/HOTSONHONET/)
+* Kumar Abhishek (https://github.com/white-beard)
