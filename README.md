@@ -1,6 +1,6 @@
 ## Under AI Watcher : An intelligent video monitoring web application for analyzing school environments
 
-*Under AI Watcher during its ideation and initial prototype phase in the HACK-ED Hackathon on Hackerearth (https://www.hackerearth.com/challenges/hackathon/jetbrains-pychamps/) was imagined as a web application that will aid the authority incharge in making the students disciplined. Also the prototype is not only limited to students but also it can detect anomalies or interdisciplinary activities in all public environments*
+<p><i>Under AI Watcher during its ideation and initial prototype phase in the HACK-ED Hackathon on Hackerearth (https://www.hackerearth.com/challenges/hackathon/jetbrains-pychamps/) was imagined as a web application that will aid the authority incharge in making the students disciplined. Also the prototype is not only limited to students but also it can detect anomalies or interdisciplinary activities in all public environments</i></p>
 
 ### Features :
 *   Classroom attendance system 
