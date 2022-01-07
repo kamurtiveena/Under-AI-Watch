@@ -35,7 +35,7 @@ python -m virtualenv <name-of-the-virtual-env>
 ```
 * 	Make sure your python version is above 3.6. Open the command prompt inside the clone directory and type in this command to the flask app:
 ```
-py app.py”
+py app.py
 ```
 * 	You will be directed to the homepage. You will see a navigation bar containing  🏠**Home**, 📜**About**,  🚶🏼‍♀️**Get Started**,  ⛑**Help**. If you have any queries, click on the **Help** button.
 * 	To analyze the video click on the **Get Started** button. This will redirect you to a page where you will see an upload bar. Simply drag and drop or video file from your local disk. There is a drop-down menu below the upload bar named “monitor activity” which shows the list of activities that you can monitor. After selecting the activity, click on the *Upload* button.
