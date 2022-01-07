@@ -36,8 +36,7 @@
   </tr>
  </table>
 
-### Wo![dowsiness detection](https://user-images.githubusercontent.com/56304060/148547269-ea00d7fd-5c5b-4931-89c9-e14aff83827e.gif)
-rking of ML models :
+### Working of ML models :
 
 <table>
   <tr>
@@ -45,7 +44,7 @@ rking of ML models :
      <td>People roaming outside</td>
   </tr>
   <tr>
-    <td><img src="https://user-images.githubusercontent.com/54463399/99926692-84a22680-2d68-11eb-8b9c-d1e6cbbd2105.jpeg" width=500 height=200></td>
+    <td><img src="https://user-images.githubusercontent.com/56304060/148547269-ea00d7fd-5c5b-4931-89c9-e14aff83827e.gif" width=500 height=200></td>
     <td><img src="https://user-images.githubusercontent.com/56304060/148547180-7d5b63aa-03b9-49c0-9902-2be5d7060f2c.gif" width=500 height=200></td>
   </tr>
   <tr>
