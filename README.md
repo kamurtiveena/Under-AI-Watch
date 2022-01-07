@@ -57,13 +57,14 @@
   </tr>
   <tr>
     <td>Classroom attendance</td>
-     <td>Vandalism detection</td>
+     <td>Student Using phones</td>
   </tr>
   <tr>
     <td><img src="https://user-images.githubusercontent.com/56304060/148547494-fad9cc5a-7622-4217-aced-9bda8ab90e80.jpg" width=500 height=200></td>
-    <td><img src="https://user-images.githubusercontent.com/56304060/129045537-b1329a4e-32d7-4d5b-ad3c-8d84ada3af27.gif" width=500 height=200></td>
+    <td><img src="https://user-images.githubusercontent.com/56304060/148553504-8659983d-815e-45e2-8f70-733054d3ec33.gif" width=500 height=200></td>
   </tr>
  </table>
+
 
 ### Resources
 * <b><i>Link for resources : https://drive.google.com/file/d/1UvMmEMvJBkdMExU416_9MRsLphdE52vx/view</i></b>
