@@ -1,6 +1,6 @@
 ## 💻👓 Under AI Watcher 👓💻
 
-<p><i>Under AI Watcher is a web application that will aid the authority incharge in making the students disciplined. Also the prototype is not only limited to students but also it can detect anomalies or interdisciplinary activities in all public environments</i></p>
+<p><i>Under AI Watcher is a web application that will aid the authority incharge in making the students disciplined. Also the prototype is not only limited to students but also it can detect anomalies or interdisciplinary activities in all public environments. It uses SOTA ML models like dlib, YOLO, Haarcasdes to carry to perform video suvillence</i></p>
 
 ## Tech Stack 📚
 - Python
@@ -18,6 +18,34 @@
   *   Detects students outside their classroom
   *   Detecting vandalism
 - Easy 3rd party application integration, so that those apps can leverage the ML model capabilities
+- Can be used to perform detection from live feed
+
+### How to use ??
+*    Visit the GitHub repository and download the resources folder which is given as a link in the “README.md file. Clone the repository and copy the [Resources](https://drive.google.com/file/d/1UvMmEMvJBkdMExU416_9MRsLphdE52vx/view) folder inside the cloned folder. For cloning use the below command:  
+```
+https://github.com/HOTSONHONET/Under-AI-Watch.git
+```
+
+* 	Create a virtual environment and then install the required packages via the ‘’requirements.txt” file (Recommended). We can also opt for root installation.
+
+```
+pip install virtualenv
+python -m virtualenv <name-of-the-virtual-env>
+<name-of-the-virtual-env>/Scripts/activate
+```
+* 	Make sure your python version is above 3.6. Open the command prompt inside the clone directory and type in this command to the flask app:
+```
+py app.py”
+```
+* 	You will be directed to the homepage. You will see a navigation bar containing  🏠**Home**, 📜**About**,  🚶🏼‍♀️**Get Started**,  ⛑**Help**. If you have any queries, click on the **Help** button.
+* 	To analyze the video click on the **Get Started** button. This will redirect you to a page where you will see an upload bar. Simply drag and drop or video file from your local disk. There is a drop-down menu below the upload bar named “monitor activity” which shows the list of activities that you can monitor. After selecting the activity, click on the *Upload* button.
+* 	The video analysis will take some time and you will be redirected to a download page. Please be patient and do not click on other options in the navigation bar during the process. 
+ *   Simply click on the “download”  button. A video file will be downloaded with the name **Evidence.mp4**. If you want to analyze more videos, simply click on the “Get Started” button on the navigation bar.
+ *    For ‘attendance monitoring’ one has to upload a video file along with images of students. Select “ClassRoom Attendance” in the dropdown menu. After clicking on the *Upload* button, you will be redirected to a new page where you have to upload a zip file. The zip file must contain distinct images of each student in a classroom with labels as their respective names. After clicking on the ‘submit’ button, you will be redirected to the download page where you can download the analyzed video along with the attendance sheet.
+
+### Created by :
+* Rudra Prasad Dash (https://github.com/HOTSONHONET/)
+* Kumar Abhishek (https://github.com/white-beard)
 
 ### UI layout :
 
@@ -68,35 +96,3 @@
     <td><img src="https://user-images.githubusercontent.com/56304060/148553504-8659983d-815e-45e2-8f70-733054d3ec33.gif" width=500 height=200></td>
   </tr>
  </table>
-
-
-### Resources
-* <b><i>Link for resources : https://drive.google.com/file/d/1UvMmEMvJBkdMExU416_9MRsLphdE52vx/view</i></b>
-* 
-### Instructions :
-*    Visit the GitHub repository and download the resources folder which is given as a link in the “README.md file. Clone the repository and copy the “Resources” folder inside the cloned folder. For cloning use the below command:
-*    
-```
-https://github.com/HOTSONHONET/Under-AI-Watch.git
-```
-
-* 	Create a virtual environment and then install the required packages via the ‘’requirements.txt” file (Recommended). We can also opt for root installation.
-
-```
-pip install virtualenv
-python -m virtualenv <name-of-the-virtual-env>
-<name-of-the-virtual-env>/Scripts/activate
-```
-* 	Make sure your python version is above 3.6. Open the command prompt inside the clone directory and type in this command to the flask app:
-```
-py app.py”
-```
-* 	You will be directed to the homepage. You will see a navigation bar containing  🏠**Home**, 📜**About**,  🚶🏼‍♀️**Get Started**,  ⛑**Help**. If you have any queries, click on the **Help** button.
-* 	To analyze the video click on the **Get Started** button. This will redirect you to a page where you will see an upload bar. Simply drag and drop or video file from your local disk. There is a drop-down menu below the upload bar named “monitor activity” which shows the list of activities that you can monitor. After selecting the activity, click on the *Upload* button.
-* 	The video analysis will take some time and you will be redirected to a download page. Please be patient and do not click on other options in the navigation bar during the process. 
- *   Simply click on the “download”  button. A video file will be downloaded with the name **Evidence.mp4**. If you want to analyze more videos, simply click on the “Get Started” button on the navigation bar.
- *    For ‘attendance monitoring’ one has to upload a video file along with images of students. Select “ClassRoom Attendance” in the dropdown menu. After clicking on the *Upload* button, you will be redirected to a new page where you have to upload a zip file. The zip file must contain distinct images of each student in a classroom with labels as their respective names. After clicking on the ‘submit’ button, you will be redirected to the download page where you can download the analyzed video along with the attendance sheet.
-
-### Created by :
-* Rudra Prasad Dash (https://github.com/HOTSONHONET/)
-* Kumar Abhishek (https://github.com/white-beard)
