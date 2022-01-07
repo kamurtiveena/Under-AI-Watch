@@ -15,7 +15,7 @@
 *   Detecting vandalism
 *   Detecting smoking in school environment 
 
-### Images of the web app :
+### UI layout :
 
 <table>
   <tr>
