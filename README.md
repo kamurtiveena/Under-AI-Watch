@@ -1,6 +1,6 @@
 ## 💻👓 Under AI Watcher 👓💻
 
-<p><i>Under AI Watcher is a web application that will aid the authority incharge in making the students disciplined. Also the prototype is not only limited to students but also it can detect anomalies or interdisciplinary activities in all public environments. It uses SOTA ML models like dlib, YOLO, Haarcasdes to carry to perform video suvillence</i></p>
+<p><i>Under AI Watcher is a platfrom that will help any web application or native applicaiton to leaverage SOTA deep learning models. It aims to aid the authority incharge in making the students disciplined in school environment. Also the prototype is not only limited to students but also it can detect anomalies or interdisciplinary activities in all public environments. It uses SOTA ML models like dlib, YOLO, Haarcasdes to carry to perform video suvillence</i></p>
 
 ## Tech Stack 📚
 - Python
