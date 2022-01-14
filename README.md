@@ -43,10 +43,6 @@ py app.py
  *   Simply click on the “download”  button. A video file will be downloaded with the name **Evidence.mp4**. If you want to analyze more videos, simply click on the “Get Started” button on the navigation bar.
  *    For ‘attendance monitoring’ one has to upload a video file along with images of students. Select “ClassRoom Attendance” in the dropdown menu. After clicking on the *Upload* button, you will be redirected to a new page where you have to upload a zip file. The zip file must contain distinct images of each student in a classroom with labels as their respective names. After clicking on the ‘submit’ button, you will be redirected to the download page where you can download the analyzed video along with the attendance sheet.
 
-### Created by :
-* Rudra Prasad Dash (https://github.com/HOTSONHONET/)
-* Kumar Abhishek (https://github.com/white-beard)
-
 ### UI layout :
 
 - The UI basically represent any web application or native application that wants to levarage our SOTA deep learning model facility
@@ -98,3 +94,8 @@ py app.py
     <td><img src="https://user-images.githubusercontent.com/56304060/148553504-8659983d-815e-45e2-8f70-733054d3ec33.gif" width=500 height=200></td>
   </tr>
  </table>
+
+
+### Created by :
+* Rudra Prasad Dash (https://github.com/HOTSONHONET/)
+* Kumar Abhishek (https://github.com/white-beard)
