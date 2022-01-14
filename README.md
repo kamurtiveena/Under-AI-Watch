@@ -20,7 +20,7 @@
 - Easy 3rd party application integration, so that those apps can leverage the ML model capabilities
 - Can be used to perform detection from live feed
 
-### How to use ??
+### How to use 🤔??
 *    Visit the GitHub repository and download the resources folder which is given as a link in the “README.md file. Clone the repository and copy the [Resources](https://drive.google.com/file/d/1UvMmEMvJBkdMExU416_9MRsLphdE52vx/view) folder inside the cloned folder. For cloning use the below command:  
 ```
 https://github.com/HOTSONHONET/Under-AI-Watch.git
@@ -48,6 +48,8 @@ py app.py
 * Kumar Abhishek (https://github.com/white-beard)
 
 ### UI layout :
+
+- The UI basically represent any web application or native application that wants to levarage our SOTA deep learning model facility
 
 <table>
   <tr>
