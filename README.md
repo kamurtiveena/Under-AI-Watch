@@ -20,7 +20,7 @@
 - Easy 3rd party application integration, so that those apps can leverage the ML model capabilities
 - Can be used to perform detection from live feed
 
-### How to use 🤔??
+### How to use 🤔?
 *    Visit the GitHub repository and download the resources folder which is given as a link in the “README.md file. Clone the repository and copy the [Resources](https://drive.google.com/file/d/1UvMmEMvJBkdMExU416_9MRsLphdE52vx/view) folder inside the cloned folder. For cloning use the below command:  
 ```
 https://github.com/HOTSONHONET/Under-AI-Watch.git
